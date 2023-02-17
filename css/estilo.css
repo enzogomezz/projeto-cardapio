@@ -34,3 +34,18 @@ header p > span{
 footer{
   margin-top: 50px;
 }
+
+
+@media (max-width: 992px){
+.col-lg-2 {
+    flex: 0 0 auto;
+    width: 30%;
+    margin-left: 20px;
+}
+}
+@media (max-width: 576px){
+.categorias svg {
+  width: 80px;
+  height: 80px;
+}
+}
