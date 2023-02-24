@@ -44,7 +44,7 @@
     <!-- Header-->
     <header>
             <div class="text-center text-white">
-                <img src="images/Logo.png" alt="Logo">
+                <img id="logo" src="images/Logo.png" alt="Logo">
                 <h1 class="display-4 fw-bolder">Cardápio</h1>
                 <p> <i class="fa-solid fa-phone"></i> (85) 3215-6541 <span><i class="fa-brands fa-whatsapp"></i> (85) 98995-4599</span></p>
                 <p></p>
@@ -55,86 +55,390 @@
     <!-- Categorias-->
     <div class="categorias">
     <div class="row justify-content-center">
-        <div class="col-lg-2">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-          <p><a class="btn btn-secondary" href="#">Entradas »</a></p>
+        <div class="col-lg-2" id="catEntradas">
+          <a href="#"><img class="bd-placeholder-img rounded-circle" width="140" height="140" src="images/entrada1.jpeg" alt="Foto das entradas"></a>
+          <p><a class="btn btn-secondary" href="#">Entradas</a></p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-2">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-          <p><a class="btn btn-secondary" href="#">Combos »</a></p>
+        <div class="col-lg-2" id="catPeixes">
+          <a href="#"><img class="bd-placeholder-img rounded-circle" width="140" height="140" src="images/peixe2.jpeg" alt="foto peixes"></a>
+          <p><a class="btn btn-secondary" href="#">Peixes</a></p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-2">
-          <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-          <p><a class="btn btn-secondary" href="#">Pratos »</a></p>
+        <div class="col-lg-2" id="catFMar">
+          <a href="#"><img class="bd-placeholder-img rounded-circle" width="140" height="140" src="images/fMar2.jpeg" alt="foto frutos do mar"></a>
+          <p><a class="btn btn-secondary" href="#">Frutos do Mar</a></p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-2">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-            <p><a class="btn btn-secondary" href="#">Bebidas »</a></p>
+        <div class="col-lg-2" id="catCarnes">
+          <a href="#"><img class="bd-placeholder-img rounded-circle" width="140" height="140" src="images/carne1.jpeg" alt="foto carnes"></a>
+            <p><a class="btn btn-secondary" href="#">Carnes</a></p>
           </div><!-- /.col-lg-4 -->
-          <div class="col-lg-2">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-            <p><a class="btn btn-secondary" href="#">Crianças »</a></p>
+          <div class="col-lg-2" id="catBebidas">
+            <a href="#"><img class="bd-placeholder-img rounded-circle" width="140" height="140" src="images/bebida1.jpg" alt="foto bebidas"></a>
+            <p><a class="btn btn-secondary" href="#">Bebidas</a></p>
           </div><!-- /.col-lg-4 -->
-          <div class="col-lg-2">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-            <p><a class="btn btn-secondary" href="#">Sobremesas »</a></p>
+          <div class="col-lg-2" id="catSobremesas">
+            <a href="#"><img class="bd-placeholder-img rounded-circle" width="140" height="140" src="images/sobremesa1.jpeg" alt="foto sobremesas"></a>
+            <p><a class="btn btn-secondary" href="#">Sobremesas</a></p>
           </div><!-- /.col-lg-4 -->
     </div>
     </div>
 
-            <!-- Pratos-->
+      <!-- Pratos-->
+      <div class="pratos">
+              <!-- Pratos mais pedidos-->
+              <div id="maisPedidos">
+              <h1>Pratos mais pedidos</h1>
             <hr class="featurette-divider">
             <div class="container marketing">
             <div class="row featurette">
                 <div class="col-md-7">
-                  <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-                  <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+                  <h2 class="featurette-heading fw-normal lh-1">Camarão Especial <span class="text-muted">R$61,00</span></h2>
+                  <p class="lead">04 camarões empanados, recheados com queijo 
+                    catupiry. Acompanha molho taíba (molho rosé especial da casa 
+                    com especiarias).</p>
+                    <button class="pedidoBtn">Peça agora</button>
                 </div>
                 <div class="col-md-5">
-                  <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                  <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/entrada1.jpeg" alt="">
                 </div>
               </div>
               <hr class="featurette-divider">
               <div class="row featurette">
                 <div class="col-md-7 order-md-2">
-                  <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-                  <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+                  <h2 class="featurette-heading fw-normal lh-1">Peixe à Delícia (2 pessoas) <span class="text-muted">R$187,00</span></h2>
+                  <p class="lead">Peixe à Delícia (2 pessoas)
+                    Tradicional nas famílias cearenses. Perfeita combinação de filé 
+                    de pescada amarela com bananas fritas e molho à base de 
+                    creme de leite, gratinado com queijos muçarela e 
+                    parmesão. Acompanha arroz branco e batatas gratinadas.</p>
+                    <button class="pedidoBtn">Peça agora</button>
                 </div>
                 <div class="col-md-5 order-md-1">
-                  <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                  <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/peixe2.jpeg" alt="">
                 </div>
               </div>
               <hr class="featurette-divider">
               <div class="row featurette">
                 <div class="col-md-7">
-                  <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-                  <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+                  <h2 class="featurette-heading fw-normal lh-1">Frutos do Mar à Italiana (3 pessoas) <span class="text-muted">R$280,00</span></h2>
+                  <p class="lead">Espaguete italiano coberto com mexilhões, lula, polvo, 
+                    camarões, salteados no azeite com alho, cebola, molho de 
+                    tomates frescos e manjericão. </p>
+                    <button class="pedidoBtn">Peça agora</button>
                 </div>
                 <div class="col-md-5">
-                  <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                  <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/fMar1.jpeg" alt="">
                 </div>
               </div>
               <hr class="featurette-divider">
               <div class="row featurette">
                 <div class="col-md-7 order-md-2">
-                  <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-                  <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+                  <h2 class="featurette-heading fw-normal lh-1">Carne de Sol do Maranhão <span class="text-muted">R$308,00</span></h2>
+                  <p class="lead">900g da Deliciosa peça inteira de carne de sol de filé 
+                    mignon. Acompanha baião de dois, farofa de ovos, banana à 
+                    milanesa, cebola roxa refogada, purê de macaxeira gratinado 
+                    com queijo coalho e vinagrete. </p>
+                    <button class="pedidoBtn">Peça agora</button>
                 </div>
                 <div class="col-md-5 order-md-1">
-                  <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                  <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/carne1.jpeg" alt="">
                 </div>
               </div>
               <hr class="featurette-divider">
               <div class="row featurette">
                 <div class="col-md-7">
-                  <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-                  <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+                  <h2 class="featurette-heading fw-normal lh-1">Filé à Parmegiana <span class="text-muted">R$249,00</span></h2>
+                  <p class="lead">04 camarões empanados, recheados com queijo 
+                    catupiry. Acompanha molho taíba (molho rosé especial da casa 
+                    com especiarias).</p>
+                    <button class="pedidoBtn">Peça agora</button>
                 </div>
                 <div class="col-md-5">
-                  <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+                  <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/carne3.jpeg" alt="">
                 </div>
               </div>
             </div>
+          </div>
+
+          <!-- Entradas-->
+          <div id="entradas" hidden>
+            <h1>Entradas</h1>
+            <hr class="featurette-divider">
+            <div class="container marketing">
+            <div class="row featurette">
+                <div class="col-md-7">
+                  <h2 class="featurette-heading fw-normal lh-1">Camarão Especial <span class="text-muted">R$61,00</span></h2>
+                  <p class="lead">04 camarões empanados, recheados com queijo 
+                    catupiry. Acompanha molho taíba (molho rosé especial da casa 
+                    com especiarias).</p>
+                    <button class="pedidoBtn">Peça agora</button>
+                </div>
+                <div class="col-md-5">
+                  <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/entrada1.jpeg" alt="">
+                </div>
+              </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Casquinha de Caranguejo <span class="text-muted">R$98,00</span></h2>
+                <p class="lead">Carne de caranguejo refogada com cheiro-verde, tomate e leite 
+                  de coco natural. Acompanha farofa da Bahia e molho de coco.</p>
+                  <button class="pedidoBtn">Peça agora</button>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/entrada2.jpeg" alt="">
+              </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Caldo de Camarão <span class="text-muted">R$62,00</span></h2>
+                <p class="lead">Caldo com camarões, alho, cebola, coentro, pimentões, 
+                  pimenta de cheiro mandioquinha e leite de coco. Acompanha 4 
+                  pãezinhos.</p>
+                  <button class="pedidoBtn">Peça agora</button>
+              </div>
+              <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/entrada3.jpeg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- Peixes-->
+          <div id="peixes" hidden>
+            <h1>Peixes</h1>
+          <hr class="featurette-divider">
+          <div class="container marketing">
+          <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Bacalhau à Espanhola (2 pessoas) <span class="text-muted">R$250,00</span></h2>
+                <p class="lead">Lombo de bacalhau coberto com cebolas, alho, tomate, 
+                  salsinha, pimentões, azeitonas pretas e vinho branco, servido 
+                  sobre uma camada de batatas laminadas 
+                  gratinadas. Acompanha arroz branco.</p>
+                  <button class="pedidoBtn">Peça agora</button>
+              </div>
+              <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/peixe1.jpeg" alt="">
+              </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Peixe à Delícia (2 pessoas) <span class="text-muted">R$187,00</span></h2>
+                <p class="lead">Tradicional nas famílias cearenses. Perfeita combinação de filé 
+                  de pescada amarela com bananas fritas e molho à base de 
+                  creme de leite, gratinado com queijos muçarela e 
+                  parmesão. Acompanha arroz branco e batatas gratinadas.</p>
+                  <button class="pedidoBtn">Peça agora</button>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/peixe2.jpeg" alt="">
+              </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Sirigado/Badejo ao Forno (2 pessoas) <span class="text-muted">R$303,00</span></h2>
+                <p class="lead">Filé de sirigado/badejo assado no forno com molho a base de 
+                  natas e vinho branco, servido com tomate, batatas torneadas, 
+                  cebola, pimentões, cenoura, coentro e alho frito. Acompanha 
+                  arroz branco e farofa de banana.</p>
+                  <button class="pedidoBtn">Peça agora</button>
+              </div>
+              <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/peixe3.jpeg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- Frutos do Mar-->
+          <div id="fMar" hidden>
+            <h1>Frutos do Mar</h1>
+          <hr class="featurette-divider">
+          <div class="container marketing">
+          <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Frutos do Mar à Italiana (3 pessoas) <span class="text-muted">R$280,00</span></h2>
+                <p class="lead">Espaguete italiano coberto com mexilhões, lula, polvo, 
+                  camarões, salteados no azeite com alho, cebola, molho de 
+                  tomates frescos e manjericão.</p>
+                  <button class="pedidoBtn">Peça agora</button>
+              </div>
+              <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/fMar1.jpeg" alt="">
+              </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Frutos do Mar ao Azeite de Ervas (3 pessoas) <span class="text-muted">R$351,00</span></h2>
+                <p class="lead">Para apreciadores de frutos do mar, com leve aroma de azeite 
+                  de ervas finas. Mexilhões, peixe, camarão, polvo e lula 
+                  salteados com azeite, alho e cebola, champignon, pimentões e 
+                  alcaparras. Servidos com arroz de brócolis e legumes salteados.</p>
+                  <button class="pedidoBtn">Peça agora</button>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/fMar2.jpeg" alt="">
+              </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Moqueca Cearense Mista (Camarão e Peixe) <span class="text-muted">R$253,00</span></h2>
+                <p class="lead">De origem indígena com toques cearenses. Nossa moqueca é 
+                  feita com tomate, cebola e pimentões refogados, pimenta de 
+                  cheiro, acrescidas de leite de coco, azeite de dendê e coentro.</p>
+                  <button class="pedidoBtn">Peça agora</button>
+              </div>
+              <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/fMar3.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- Carnes -->
+          <div id="carnes" hidden>
+            <h1>Carnes</h1>
+          <hr class="featurette-divider">
+          <div class="container marketing">
+          <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Carne de Sol do Maranhão <span class="text-muted">R$308,00</span></h2>
+                <p class="lead">900g da Deliciosa peça inteira de carne de sol de filé 
+                  mignon. Acompanha baião de dois, farofa de ovos, banana à 
+                  milanesa, cebola roxa refogada, purê de macaxeira gratinado 
+                  com queijo coalho e vinagrete.</p>
+                  <button class="pedidoBtn">Peça agora</button>
+              </div>
+              <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/carne1.jpeg" alt="">
+              </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Filé Paris <span class="text-muted">R$224,00</span></h2>
+                <p class="lead">500g de filé mignon servido sobre camada de manteiga 
+                  preparada na casa com mostarda e ervas. Acompanha polenta 
+                  frita e arroz branco.</p>
+                  <button class="pedidoBtn">Peça agora</button>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/carne2.jpeg" alt="">
+              </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Filé à Parmegiana <span class="text-muted">R$249,00</span></h2>
+                <p class="lead">400g de filé mignon à milanesa envoltos em molho caseiro de 
+                  tomate fresco e gratinado com queijos muçarela e 
+                  parmesão. Servido com espaguete ou arroz e fritas.</p>
+                  <button class="pedidoBtn">Peça agora</button>
+              </div>
+              <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/carne3.jpeg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- Bebidas-->
+          <div id="bebidas" hidden>
+            <h1>Bebidas</h1>
+          <hr class="featurette-divider">
+          <div class="container marketing">
+          <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Jarra de suco 1L <span class="text-muted">R$20,00</span></h2>
+                <p class="lead">Sabores: Limão, Laranja, Acerola, Morango, Maracujá, Manga, Cajú.</p>
+                  <button class="pedidoBtn">Peça agora</button>
+              </div>
+              <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/jarra.jpg" alt="">
+              </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Refrigerante 2L <span class="text-muted">R$15,00</span></h2>
+                <p class="lead">Refrigerantes disponíveis: Fanta Uva, Fanta Laranja, Coca-cola, Pepsi, Guaraná Antártica.</p>
+                  <button class="pedidoBtn">Peça agora</button>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/refrigerante.jpg" alt="">
+              </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Garrafa de vinho tinto <span class="text-muted">R$50,00</span></h2>
+                <p class="lead">Vinhos disponíveis: Vinho Reservado Cabernet Sauvignon, Santa Helena / 
+                  Vinho Reservado Sweet Red, Concha y Toro / 
+                  Vinho Reservado Sauvignon Blanc, Santa Helena / 
+                  Vinho Branco Chardonnay e Macabeo, Esteban Martín / 
+                  Vinho Chileno Rosé, Chilano / 
+                  Vinho Pinot Noir, Gato Negro / 
+                  Vinho Merlot, Concha Y Toro / 
+                  Vinho Verde, Via Latina.
+                  <button class="pedidoBtn">Peça agora</button>
+              </div>
+              <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/vinho.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+          
+
+          <!-- Sobremesas-->
+          <div id="sobremesas" hidden>
+            <h1>Sobremesas</h1>
+          <hr class="featurette-divider">
+          <div class="container marketing">
+          <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Bolo de Queijo <span class="text-muted">R$46,00</span></h2>
+                <p class="lead">Fatia de torta a base de cream cheese e geleia de morangos 
+                  frescos sobre biscoito de chocolate.</p>
+                  <button class="pedidoBtn">Peça agora</button>
+              </div>
+              <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/sobremesa1.jpeg" alt="">
+              </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Cocada ao Forno <span class="text-muted">R$29,00</span></h2>
+                <p class="lead">Elaborada com coco ralado fresco e leite condensado. Dourada 
+                  ao forno e servida quente.</p>
+                  <button class="pedidoBtn">Peça agora</button>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/sobremesa2.jpeg" alt="">
+              </div>
+            </div>
+            <hr class="featurette-divider">
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Torta de Limão <span class="text-muted">R$35,00</span></h2>
+                <p class="lead">Fatia de torta de creme de limão e leite condensado sobre 
+                  massa de biscoito. Acompanha calda de chocolate.</p>
+                  <button class="pedidoBtn">Peça agora</button>
+              </div>
+              <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/sobremesa3.jpeg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
             
             <!-- Footer -->
 <footer class="bg-dark text-center text-white">
@@ -241,5 +545,6 @@
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
+  <script src="js/script.js"></script>
 </body>
 </html>
