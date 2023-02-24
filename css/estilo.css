@@ -3,11 +3,15 @@ header{
   padding: 30px 0;
 }
 
-header img {
+#logo {
   width: 300px;
   height: 300px;
   border-radius: 50%;
   margin-bottom: 20px;
+}
+
+#logo:hover {
+cursor: pointer;
 }
 
 header h1 {
@@ -31,7 +35,7 @@ header p > span{
   margin-bottom: 50px;
 }
 
-.categorias img /* lembrar de trocar para img*/{
+.categorias img{
   margin-left: 30px;
   border: 5px solid #562d13;
 }
@@ -50,6 +54,12 @@ header p > span{
   background-color: #964308;
   border: 3px solid bisque;
 }
+
+.categorias p > a:active {
+  background-color: #964308 !important;
+  border: 3px solid bisque !important;
+}
+
 
 .pratos h1{
   text-align: center;
@@ -126,5 +136,13 @@ header img {
 header img {
   width: 200px;
   height: 200px;
+}
+
+.pedidoBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
 }
 }
