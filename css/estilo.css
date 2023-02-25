@@ -1,3 +1,11 @@
+nav img{
+  border-radius: 50%;
+}
+
+nav a{
+  color: #964308;
+}
+
 header{
   background: linear-gradient(to bottom, #ae5618  , #562d13);
   padding: 30px 0;
