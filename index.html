@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container px-4 px-lg-5">
           <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" id="navLogo" href="#">
               <img src="images/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo">
               Cardápio
             </a>
@@ -24,13 +24,13 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Promoções</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Entradas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Peixes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Frutos do Mar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Carnes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Bebidas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Sobremesas</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!" id="navPromocoes">Promoções</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!" id="navEntradas">Entradas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!" id="navPeixes">Peixes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!" id="navFMar">Frutos do Mar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!" id="navCarnes">Carnes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!" id="navBebidas">Bebidas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#!" id="navSobremesas">Sobremesas</a></li>
                     
                 </ul>
                 <form class="d-flex">
@@ -94,14 +94,14 @@
 
       <!-- Pratos-->
       <div class="pratos">
-              <!-- Pratos mais pedidos-->
-              <div id="maisPedidos">
-              <h1>Pratos mais pedidos</h1>
+              <!-- Pratos em promoção-->
+              <div id="promocoes">
+              <h1>Promoções</h1>
             <hr class="featurette-divider">
             <div class="container marketing">
             <div class="row featurette">
                 <div class="col-md-7">
-                  <h2 class="featurette-heading fw-normal lh-1">Camarão Especial <span class="text-muted">R$61,00</span></h2>
+                  <h2 class="featurette-heading fw-normal lh-1">Camarão Especial <span class="text-muted promo">R$61,00 </span> R$49,00</h2>
                   <p class="lead">04 camarões empanados, recheados com queijo 
                     catupiry. Acompanha molho taíba (molho rosé especial da casa 
                     com especiarias).</p>
@@ -114,7 +114,7 @@
               <hr class="featurette-divider">
               <div class="row featurette">
                 <div class="col-md-7 order-md-2">
-                  <h2 class="featurette-heading fw-normal lh-1">Peixe à Delícia (2 pessoas) <span class="text-muted">R$187,00</span></h2>
+                  <h2 class="featurette-heading fw-normal lh-1">Peixe à Delícia (2 pessoas) <span class="text-muted promo">R$187,00 </span> R$149,00</h2>
                   <p class="lead">Peixe à Delícia (2 pessoas)
                     Tradicional nas famílias cearenses. Perfeita combinação de filé 
                     de pescada amarela com bananas fritas e molho à base de 
@@ -129,7 +129,7 @@
               <hr class="featurette-divider">
               <div class="row featurette">
                 <div class="col-md-7">
-                  <h2 class="featurette-heading fw-normal lh-1">Frutos do Mar à Italiana (3 pessoas) <span class="text-muted">R$280,00</span></h2>
+                  <h2 class="featurette-heading fw-normal lh-1">Frutos do Mar à Italiana (3 pessoas) <span class="text-muted promo">R$280,00 </span>R$249,00</h2>
                   <p class="lead">Espaguete italiano coberto com mexilhões, lula, polvo, 
                     camarões, salteados no azeite com alho, cebola, molho de 
                     tomates frescos e manjericão. </p>
@@ -142,7 +142,7 @@
               <hr class="featurette-divider">
               <div class="row featurette">
                 <div class="col-md-7 order-md-2">
-                  <h2 class="featurette-heading fw-normal lh-1">Carne de Sol do Maranhão <span class="text-muted">R$308,00</span></h2>
+                  <h2 class="featurette-heading fw-normal lh-1">Carne de Sol do Maranhão <span class="text-muted promo">R$308,00 </span> R$269,00</h2>
                   <p class="lead">900g da Deliciosa peça inteira de carne de sol de filé 
                     mignon. Acompanha baião de dois, farofa de ovos, banana à 
                     milanesa, cebola roxa refogada, purê de macaxeira gratinado 
@@ -156,7 +156,7 @@
               <hr class="featurette-divider">
               <div class="row featurette">
                 <div class="col-md-7">
-                  <h2 class="featurette-heading fw-normal lh-1">Filé à Parmegiana <span class="text-muted">R$249,00</span></h2>
+                  <h2 class="featurette-heading fw-normal lh-1">Filé à Parmegiana <span class="text-muted promo">R$249,00 </span> R$229,00</h2>
                   <p class="lead">04 camarões empanados, recheados com queijo 
                     catupiry. Acompanha molho taíba (molho rosé especial da casa 
                     com especiarias).</p>
@@ -176,7 +176,7 @@
             <div class="container marketing">
             <div class="row featurette">
                 <div class="col-md-7">
-                  <h2 class="featurette-heading fw-normal lh-1">Camarão Especial <span class="text-muted">R$61,00</span></h2>
+                  <h2 class="featurette-heading fw-normal lh-1">Camarão Especial <span class="text-muted promo">R$61,00 </span> R$49,00</h2>
                   <p class="lead">04 camarões empanados, recheados com queijo 
                     catupiry. Acompanha molho taíba (molho rosé especial da casa 
                     com especiarias).</p>
@@ -235,7 +235,7 @@
             <hr class="featurette-divider">
             <div class="row featurette">
               <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading fw-normal lh-1">Peixe à Delícia (2 pessoas) <span class="text-muted">R$187,00</span></h2>
+                <h2 class="featurette-heading fw-normal lh-1">Peixe à Delícia (2 pessoas) <span class="text-muted promo">R$187,00 </span> R$149,00</h2>
                 <p class="lead">Tradicional nas famílias cearenses. Perfeita combinação de filé 
                   de pescada amarela com bananas fritas e molho à base de 
                   creme de leite, gratinado com queijos muçarela e 
@@ -270,7 +270,7 @@
           <div class="container marketing">
           <div class="row featurette">
               <div class="col-md-7">
-                <h2 class="featurette-heading fw-normal lh-1">Frutos do Mar à Italiana (3 pessoas) <span class="text-muted">R$280,00</span></h2>
+                <h2 class="featurette-heading fw-normal lh-1">Frutos do Mar à Italiana (3 pessoas) <span class="text-muted promo">R$280,00 </span> R$249,00</h2>
                 <p class="lead">Espaguete italiano coberto com mexilhões, lula, polvo, 
                   camarões, salteados no azeite com alho, cebola, molho de 
                   tomates frescos e manjericão.</p>
@@ -317,7 +317,7 @@
           <div class="container marketing">
           <div class="row featurette">
               <div class="col-md-7">
-                <h2 class="featurette-heading fw-normal lh-1">Carne de Sol do Maranhão <span class="text-muted">R$308,00</span></h2>
+                <h2 class="featurette-heading fw-normal lh-1">Carne de Sol do Maranhão <span class="text-muted promo">R$308,00 </span> R$269,00</h2>
                 <p class="lead">900g da Deliciosa peça inteira de carne de sol de filé 
                   mignon. Acompanha baião de dois, farofa de ovos, banana à 
                   milanesa, cebola roxa refogada, purê de macaxeira gratinado 
@@ -344,7 +344,7 @@
             <hr class="featurette-divider">
             <div class="row featurette">
               <div class="col-md-7">
-                <h2 class="featurette-heading fw-normal lh-1">Filé à Parmegiana <span class="text-muted">R$249,00</span></h2>
+                <h2 class="featurette-heading fw-normal lh-1">Filé à Parmegiana <span class="text-muted promo">R$249,00</span> R$229,00</h2>
                 <p class="lead">400g de filé mignon à milanesa envoltos em molho caseiro de 
                   tomate fresco e gratinado com queijos muçarela e 
                   parmesão. Servido com espaguete ou arroz e fritas.</p>
@@ -380,7 +380,7 @@
                   <button class="pedidoBtn">Peça agora</button>
               </div>
               <div class="col-md-5 order-md-1">
-                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/refrigerante.jpg" alt="">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="images/refrigerante.png" alt="">
               </div>
             </div>
             <hr class="featurette-divider">

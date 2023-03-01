@@ -1,76 +1,64 @@
 // Trocar categoria para Entradas
+function trocarCategoria(idCategoria) {
+  document.getElementById("promocoes").hidden = true;
+  document.getElementById("entradas").hidden = true;
+  document.getElementById("peixes").hidden = true;
+  document.getElementById("fMar").hidden = true;
+  document.getElementById("carnes").hidden = true;
+  document.getElementById("bebidas").hidden = true;
+  document.getElementById("sobremesas").hidden = true;
+  document.getElementById(idCategoria).removeAttribute("hidden");
+}
+
 document.getElementById("catEntradas").addEventListener("click", function() {
-  document.getElementById("maisPedidos").hidden = true;
-  document.getElementById("sobremesas").hidden = true;
-  document.getElementById("peixes").hidden = true;
-  document.getElementById("fMar").hidden = true;
-  document.getElementById("carnes").hidden = true;
-  document.getElementById("bebidas").hidden = true;
-  document.getElementById("entradas").removeAttribute("hidden");
+  trocarCategoria("entradas");
+});
+document.getElementById("navEntradas").addEventListener("click", function() {
+  trocarCategoria("entradas");
 });
 
-// Trocar categoria para Peixes
 document.getElementById("catPeixes").addEventListener("click", function() {
-  document.getElementById("maisPedidos").hidden = true;
-  document.getElementById("entradas").hidden = true;
-  document.getElementById("sobremesas").hidden = true;
-  document.getElementById("fMar").hidden = true;
-  document.getElementById("carnes").hidden = true;
-  document.getElementById("bebidas").hidden = true;
-  document.getElementById("peixes").removeAttribute("hidden");
+  trocarCategoria("peixes");
+});
+document.getElementById("navPeixes").addEventListener("click", function() {
+  trocarCategoria("peixes");
 });
 
-// Trocar categoria para Frutos do Mar
 document.getElementById("catFMar").addEventListener("click", function() {
-  document.getElementById("maisPedidos").hidden = true;
-  document.getElementById("entradas").hidden = true;
-  document.getElementById("peixes").hidden = true;
-  document.getElementById("sobremesas").hidden = true;
-  document.getElementById("carnes").hidden = true;
-  document.getElementById("bebidas").hidden = true;
-  document.getElementById("fMar").removeAttribute("hidden");
+  trocarCategoria("fMar");
+});
+document.getElementById("navFMar").addEventListener("click", function() {
+  trocarCategoria("fMar");
 });
 
-// Trocar categoria para Carnes
 document.getElementById("catCarnes").addEventListener("click", function() {
-  document.getElementById("maisPedidos").hidden = true;
-  document.getElementById("entradas").hidden = true;
-  document.getElementById("peixes").hidden = true;
-  document.getElementById("fMar").hidden = true;
-  document.getElementById("sobremesas").hidden = true;
-  document.getElementById("bebidas").hidden = true;
-  document.getElementById("carnes").removeAttribute("hidden");
+  trocarCategoria("carnes");
+});
+document.getElementById("navCarnes").addEventListener("click", function() {
+  trocarCategoria("carnes");
 });
 
-// Trocar categoria para Bebidas
 document.getElementById("catBebidas").addEventListener("click", function() {
-  document.getElementById("maisPedidos").hidden = true;
-  document.getElementById("entradas").hidden = true;
-  document.getElementById("peixes").hidden = true;
-  document.getElementById("fMar").hidden = true;
-  document.getElementById("carnes").hidden = true;
-  document.getElementById("sobremesas").hidden = true;
-  document.getElementById("bebidas").removeAttribute("hidden");
+  trocarCategoria("bebidas");
+});
+document.getElementById("navBebidas").addEventListener("click", function() {
+  trocarCategoria("bebidas");
 });
 
-// Trocar categoria para sobremesas
 document.getElementById("catSobremesas").addEventListener("click", function() {
-  document.getElementById("maisPedidos").hidden = true;
-  document.getElementById("entradas").hidden = true;
-  document.getElementById("peixes").hidden = true;
-  document.getElementById("fMar").hidden = true;
-  document.getElementById("carnes").hidden = true;
-  document.getElementById("bebidas").hidden = true;
-  document.getElementById("sobremesas").removeAttribute("hidden");
+  trocarCategoria("sobremesas");
+});
+document.getElementById("navSobremesas").addEventListener("click", function() {
+  trocarCategoria("sobremesas");
 });
 
-// Trocar categoria para Mais Pedidos
 document.getElementById("logo").addEventListener("click", function() {
-  document.getElementById("sobremesas").hidden = true;
-  document.getElementById("entradas").hidden = true;
-  document.getElementById("peixes").hidden = true;
-  document.getElementById("fMar").hidden = true;
-  document.getElementById("carnes").hidden = true;
-  document.getElementById("bebidas").hidden = true;
-  document.getElementById("maisPedidos").removeAttribute("hidden");
+  trocarCategoria("promocoes");
+});
+document.getElementById("navPromocoes").addEventListener("click", function() {
+  trocarCategoria("promocoes");
+});
+
+document.getElementById("navLogo").addEventListener("click", function() {
+  trocarCategoria("promocoes");
 });

@@ -79,6 +79,10 @@ header p > span{
   border: 4px solid #562d13;
 }
 
+.promo {
+  text-decoration: line-through;
+}
+
 .pedidoBtn {
   height: 50px;
   width: 200px;
